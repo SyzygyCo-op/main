@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Syzygy Co-op</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{{ url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="{{ url_for('static', filename='vendor/magnific-popup/magnific-popup.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/creative.css')}}" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='vendor/scrollreveal/scrollreveal.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='vendor/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
+
+    <script src="{{ url_for('static', filename='js/glitch-canvas-browser.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/glitch.jquery.js')}}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ url_for('static', filename='js/creative.js')}}"></script>
+
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/paper.min.js')}}"></script>
+
+    <script type="text/paperscript" canvas="myCanvas" src="{{ url_for('static', filename='js/effects.js')}}"></script>
+  </head>
+
+  <body id="page-top" style="display:none">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img height="70px" src="{{ url_for('static', filename='img/colored-logo.png')}}"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#resources">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#members">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <canvas resize='false' id='myCanvas'></canvas>
+    <img id="logo" style="display:none" src="{{ url_for('static', filename='img/white_logo.png')}}" width="1450" height="600">
+
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Who are we?</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">We are artists, musicians, makers, programmers and more, who are building a creative community in downtown SF.
+<br>
+<br>
+Our mission is to create a space where people from all backgrounds can inspire each other, collaborate, and keep the spirit of all that is weird and creative alive in SF.</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#resources">Check us out!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sect-banner">
+     <!--List items for bg images -->
+     <ul class="kf-slider">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+     </ul>
+    </section>
+
+    <section id="resources">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">What do we have?</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-wrench text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Maker Space</h3>
+              <p class="text-muted mb-0">We have power tools, a laser cutter and electronics tools, as well as quite a bit of scrap wood and electronics parts to make cool stuff with!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-music text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Music Studio</h3>
+              <p class="text-muted mb-0">Our music studio has a computer loaded with software and samples, as well as keyboards, microphones, a drum set, guitars and more!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-paint-brush text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Art Room</h3>
+              <p class="text-muted mb-0">We have a sculpting setup, multiple easels, and art materials supplied by the co-op.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-ticket text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Event Space</h3>
+              <p class="text-muted mb-0">We have two galleries and a mezzanine for whatever events you might want to host</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-0" id="members">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="members-box" href="{{ url_for('static', filename='img/portfolio/fullsize/1.jpg')}}">
+              <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio/thumbnails/1.jpg')}}" alt="">
+              <div class="members-box-caption">
+                <div class="members-box-caption-content">
+                  <div class="member-category text-faded">
+                    Puppy
+                  </div>
+                  <div class="member-name">
+                    Ori Zuerndorfer
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="members-box" href="{{ url_for('static', filename='img/portfolio/fullsize/2.jpg')}}">
+              <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio/thumbnails/2.jpg')}}" alt="">
+              <div class="members-box-caption">
+                <div class="members-box-caption-content">
+                  <div class="member-category text-faded">
+                    Title
+                  </div>
+                  <div class="member-name">
+                    Member Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="members-box" href="{{ url_for('static', filename='img/portfolio/fullsize/3.jpg')}}">
+              <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio/thumbnails/3.jpg')}}" alt="">
+              <div class="members-box-caption">
+                <div class="members-box-caption-content">
+                  <div class="member-category text-faded">
+                    Title
+                  </div>
+                  <div class="member-name">
+                    Member Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="members-box" href="{{ url_for('static', filename='img/portfolio/fullsize/4.jpg')}}">
+              <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio/thumbnails/4.jpg')}}" alt="">
+              <div class="members-box-caption">
+                <div class="members-box-caption-content">
+                  <div class="member-category text-faded">
+                    Title
+                  </div>
+                  <div class="member-name">
+                    Member Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="members-box" href="{{ url_for('static', filename='img/portfolio/fullsize/5.jpg')}}">
+              <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio/thumbnails/5.jpg')}}" alt="">
+              <div class="members-box-caption">
+                <div class="members-box-caption-content">
+                  <div class="member-category text-faded">
+                    Title
+                  </div>
+                  <div class="member-name">
+                    Member Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="members-box" href="{{ url_for('static', filename='img/portfolio/fullsize/6.jpg')}}">
+              <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio/thumbnails/6.jpg')}}" alt="">
+              <div class="members-box-caption">
+                <div class="members-box-caption-content">
+                  <div class="member-category text-faded">
+                    Title
+                  </div>
+                  <div class="member-name">
+                    Member Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Keep Updated!</h2>
+            <hr class="my-4">
+            <p class="mb-5">Want to find out about what we're doing in the future? Connect with us online!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-facebook fa-3x mb-3 sr-contact"></i>
+            <p>
+               <a href="https://www.facebook.com/syzygyacademy">facebook.com/syzygyacademy</a>
+            </p>
+          </div>
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-instagram fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a href="https://www.instagram.com/syzygycoop">instagram.com/syzygycoop</a>
+            </p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a href="mailto:someone@syzygy.pw">someone@syzygy.pw</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+</html>
+

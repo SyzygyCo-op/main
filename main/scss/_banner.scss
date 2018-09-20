@@ -1,0 +1,135 @@
+/*----------------------------------------------   
+--Banner
+-----------------------------------------------  */
+.sect-banner{
+ display: table;
+ width: 100%;
+ margin: 0 auto;
+ text-align: center;
+
+ /*-- Full Height --*/
+ height: 42vh;
+ color:	rgba(255,255,255,0.9);
+
+ /*-- Vertically center --*/
+ .v-center{
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index: 4;
+  padding: 0 5%;
+ }
+
+ @media (min-width: 700px) {
+   height: 100vh;
+ }
+}
+
+/*----------------------------------------------   
+--Keyframes
+-----------------------------------------------  */
+@include keyframes(fade-out) {
+ 10%{
+  opacity: 1
+ }
+ 20%{
+ opacity: 0
+ }
+}
+
+/*----------------------------------------------   
+--List for images, sm and large
+-----------------------------------------------  */
+ul.kf-slider{
+ li{ 	
+  height: 40%;
+  @media (min-width: 700px) {
+    height: 100%;
+  }
+  width: 100%;
+  position: absolute;
+  margin-left: -40px;
+  margin-top: -128px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:	50%;
+  z-index: 0;
+  opacity: 0;
+  /*-- Add animation --*/ 
+  @include animation(fade-out 48s infinite both);
+  /*-- Image 1: small --*/ 
+  background-image: url(../img/headers/1.jpg);
+  @media (min-width: 32ems){
+   /*-- Image 1: large --*/ 
+   background-image: url(../img/headers/1.jpg);
+  }
+ }
+ /*-- Image 2 --*/ 
+ li:nth-child(2){
+  background-image: url(../img/headers/2.jpg);
+  /*-- Animation delay: 3s --*/ 
+  @include animation-delay(6s);
+  @media (min-width: 32ems){
+   background-image: url(../img/headers/2.jpg);
+  }
+ }
+ /*-- Image 3 --*/ 
+ li:nth-child(3){
+  background-image: url(../img/headers/3.jpg);
+  /* Animation delay: 6s */  
+  @include animation-delay(12s);
+  @media (min-width: 32ems){
+   background-image: url(../img/headers/3.jpg);
+  }
+ }
+
+ /*-- Image 4 --*/ 
+ li:nth-child(4){
+  background-image: url(../img/headers/4.jpg);
+  /* Animation delay: 6s */  
+  @include animation-delay(18s);
+  @media (min-width: 32ems){
+   background-image: url(../img/headers/4.jpg);
+  }
+ }
+
+ /*-- Image 5 --*/ 
+ li:nth-child(5){
+  background-image: url(../img/headers/5.jpg);
+  /* Animation delay: 6s */  
+  @include animation-delay(24s);
+  @media (min-width: 32ems){
+   background-image: url(../img/headers/5.jpg);
+  }
+ }
+
+ /*-- Image 6 --*/ 
+ li:nth-child(6){
+  background-image: url(../img/headers/6.jpg);
+  /* Animation delay: 6s */  
+  @include animation-delay(30s);
+  @media (min-width: 32ems){
+   background-image: url(../img/headers/6.jpg);
+  }
+ }
+
+ /*-- Image 7 --*/ 
+ li:nth-child(7){
+  background-image: url(../img/headers/7.jpg);
+  /* Animation delay: 6s */  
+  @include animation-delay(36s);
+  @media (min-width: 32ems){
+   background-image: url(../img/headers/7.jpg);
+  }
+ }
+
+ /*-- Image 8 --*/ 
+ li:nth-child(8){
+  background-image: url(../img/headers/8.jpg);
+  /* Animation delay: 6s */  
+  @include animation-delay(42s);
+  @media (min-width: 32ems){
+   background-image: url(../img/headers/8.jpg);
+  }
+ }
+}

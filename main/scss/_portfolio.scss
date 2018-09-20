@@ -1,0 +1,59 @@
+// Styling for the members section
+.members-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+  .members-box-caption {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: $white;
+    background: fade-out($primary, .1);
+    @include transition-all;
+    .members-box-caption-content {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+      text-align: center;
+      .member-category,
+      .member-name {
+        padding: 0 15px;
+        @include sans-serif-font;
+      }
+      .member-category {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .member-name {
+        font-size: 18px;
+      }
+    }
+  }
+  &:hover {
+    .members-box-caption {
+      opacity: 1;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+  @media (min-width: 768px) {
+    .members-box-caption {
+      .members-box-caption-content {
+        .member-category {
+          font-size: 16px;
+        }
+        .member-name {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
