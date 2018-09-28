@@ -12,4 +12,3 @@ csrf = CSRFProtect(app)
 
 #pylint: disable=wrong-import-position
 from . import views
-from . import models
