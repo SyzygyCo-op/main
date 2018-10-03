@@ -28,5 +28,3 @@ def email_view():
        #                                             "facebook": "Marc Wagenseil"
         #                                              }
        # }'
-
-
