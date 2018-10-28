@@ -13,5 +13,5 @@ def index_view():
     return render_template('index.html')
 
 @app.route('/email', methods=['GET'])
-def index_view():
+def email_view():
     return render_template('email.html')
