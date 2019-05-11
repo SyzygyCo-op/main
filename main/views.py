@@ -12,6 +12,10 @@ logger = logging.getLogger(__name__)
 def index_view():
     return render_template('index.html')
 
+@app.route('/invite', methods=['GET'])
+def invite_view():
+    return render_template('invite.html')
+
 @app.route('/email', methods=['GET'])
 def email_view():
     return render_template('email.html')
